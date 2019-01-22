@@ -23,8 +23,16 @@ public class DriverBase {
     public static ExtentReports report = null;
     public static ExtentTest logger = null;
     public static JavascriptExecutor jse = null;
-    String driverPath = "/Users/Fahad/Documents/MavenProject/src/main/resources/chromedriver";
-    String reportPath = "/Users/Fahad/Documents/BIProject/src/main/java/Report/ExtentReport.html";
+
+    //browser driver path and report path - MAC
+
+    String driverPath = "src/main/resources/chromedriver";
+    String reportPath = "src/main/java/Report/ExtentReport.html";
+
+    //browser driver path and report path - WINDOWS
+
+    //String driverPath = "src\\main\\resources\\chromedriver_WIN.exe";
+    //String reportPath = "src\\main\\java\\Report\\ExtentReport.html";
 
     @BeforeSuite
     public void openBrowser(){
